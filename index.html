@@ -1,0 +1,319 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Barber Shop - Cosa Nostra</title>
+	<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Alumni+Sans+Collegiate+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sansita:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<style>
+	@font-face { font-family: Gratina";
+		src:url("Gratina.otf");	}</style>
+</head>
+<body>
+	<header>              <!-- IZBORNIK!-->
+		<div class="naslov_struktura">
+			<a href="#"><h1 class="glavni_naslov"><span class="glavni_naslov_bs">Barber Shop</span><br>Cosa Nostra</h1></a>
+		</div>
+		<div class="opcije">
+		<ol>
+			<li><a href="#">Početna</a></li>
+			<li><a href="#onama">O nama</a></li>
+			<li><a href="#usluge">Usluge</a></li>
+			<li><a href="#galerija">Galerija</a></li>
+			<li><a href="#kontakt">Kontakt</a></li>
+		</ol>
+		</div>
+	</header>
+	<div class="pozadinaa">      <!-- NASLOVNA !-->
+		<div class="pozadina">
+			<div class="logo_pozadine">
+				<img src="slike/logo_full.png" height="600px">
+			</div>
+		</div>
+	</div>
+	<div class="sekcija1">	<!-- UVODNI DIO !-->
+		<div class="podsekcija1">
+		<h2 class="podnaslov">Dođite i doživite tajnu transformaciju koju samo Cosa Nostra može pružiti.</h2>
+		<p class="naslovna_odlomak1">Nudimo vam vrhunsku uslugu koja se temelji na kvaliteti, preciznosti i posvećenosti. 
+		Naši frizeri su majstori svog zanata i vješto oblikuju kosu prema vašim željama, istovremeno 
+		vodeći računa o njezinoj cjelokupnoj dobrobiti.</p>
+		<p class="naslovna_odlomak2" id="usluge">Kod nas se ne radi samo o tome kako izgledate, već i o tome kako se osjećate. Naš salon je dizajniran da vam pruži opuštajuće 
+		iskustvo dok se brinemo o vašoj kosi. Koristimo najnovije tehnike i premium proizvode kako bismo osigurali da svaka frizura bude
+		savršeno oblikovana i zrači zdravljem.</p>
+		</div>
+		<div class="podsekcija2">
+		<h3 class="cta">
+			Rezerviraj svoj <br> <span class="termin">termin!</span>
+		</h3>
+		<a href="#sekcija3"><button class="cta_dugme">Rezervacija</button></a>
+		
+		</div>
+	</div>
+	<div id="sekcija2">                 <!-- CJENIK !-->
+		<div class="sekcija2">
+			<h2 class="cjenik_naslov">Cjenik</h2>
+			<div class="cjenikk">
+				<ul>
+					<li><div class="li">Fade šišanje</div> <div class="cijena"><sub>10</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Razor fade</div> <div class="cijena"><sub>13</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Buzz cut</div> <div class="cijena"><sub>10</sub><sup>EUR</sup></div></li>
+					<li><div class="li">French Crop</div> <div class="cijena"><sub>10</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Uređivanje brade</div>  <div class="cijena"><sub>10</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Farbanje kose</div>  <div class="cijena"><sub>15</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Farbanje brade</div>  <div class="cijena"><sub>15</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Brijanje</div>  <div class="cijena"><sub>5</sub><sup>EUR</sup></div></li>
+					<li><div class="li">Pranje kose</div>  <div class="cijena"><sub>2</sub><sup>EUR</sup></div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sekcija_barberi">                    <!-- NAŠI BARBERI !-->
+		<h2 class="barberi_naslov">Naši barberi</h2>
+		<div class="barber1"></div>
+		<div class="barber2"></div>
+		<div class="barber3"></div>
+		<div class="barber4"></div>
+	</div>
+	<div class="sekcija3" id="sekcija3">             <!-- REZERVACIJA !-->
+		<fieldset>
+		<legend>Rezerviraj se!</legend>
+		<div class="form">
+			<form action="">
+            <div class="input-container">
+				<label for="ime">Ime i prezime</label><br>
+                <input type="text" name="ime" class="input" />
+            </div>
+            <div class="input-container">
+				<label for="email">Email</label><br>
+				<input type="email" name="email" class="input" />
+            </div>
+            <div class="input-container">
+				<label for="br">Broj telefona</label><br>
+				<input type="number" name="br" class="input" />
+            </div>
+			<div class="input-container">
+				<label for="datum">Datum</label><br>
+				<input type="date" name="datum" class="input" />
+            </div>
+			<div class="input-container">
+				<label for="vrijeme">Vrijeme</label><br>
+				<input type="time" name="vrijeme" class="input" />
+            </div>
+			<div class="input-container">
+			<label for="usluga">Odaberite uslugu</label><br>
+				<select name="usluga" id="usluga">
+					<option value="fade">Fade šišanje</option>
+					<option value="razor">Razor fade</option>
+					<option value="buzz">Buzz cut</option>
+					<option value="crop">French crop</option>
+					<option value="brijanje">Brijanje</option>
+					<option value="farbanje">Farbanje</option>
+					<option value="pranje">Pranje</option>
+				</select>
+			</div>
+			<div class="input-container">
+			<label for="barber">Odaberite barbera</label><br>
+			<input list="barber" name="barber">
+				<datalist id="barber">
+					<option value="Oliver">
+					<option value="Petar">
+					<option value="Andrej">
+					<option value="Daniel">
+				</datalist>
+			</div>
+            <div class="input-container">
+				<textarea placeholder="Vaša poruka" class="input"></textarea>
+            </div>
+			<div class="button-container">
+				<input type="button" value="Pošalji" onclick="submit"> 
+				<input type="button" value="Očisti" onclick="reset">
+			</div>
+		</div>
+        </form>
+		</fieldset>
+    </div>
+	<div class="sekcija_galerija" id="galerija">
+		<h2 class="galerija_naslov">Naš rad</h2>
+		<div class="galerija">
+			<div class="slike">
+				<a href="slike/galerija1.jpg" target="_blank"><img src="slike/g1.jpg" alt="Slika 1"></a>
+			</div>
+			<div class="slike">
+				<a href="slike/galerija2.jpg" target="_blank"><img src="slike/g2.jpg" alt="Slika 2"></a>
+			</div>
+			<div class="slike">
+				<a href="slike/galerija3.jpg" target="_blank"><img src="slike/g3.jpg" alt="Slika 3"></a>
+			</div>
+			<div class="slike">
+				<a href="slike/galerija4.jpeg" target="_blank"><img src="slike/g4.jpg" alt="Slika 4"></a>
+			</div>
+			<div class="slike">
+				<a href="slike/galerija5.jpeg" target="_blank"><img src="slike/g5.jpg" alt="Slika 5"></a>
+			</div>
+			<div class="slike">
+				<a href="slike/galerija6.jpeg" target="_blank"><img src="slike/g6.jpg" alt="Slika 6"></a>
+			</div>
+		</div>
+		<div class="video1">
+			<video width="400"  controls loop>
+				<source src="slike/film1.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="video2">
+			<video width="400" id="onama" controls loop>
+				<source src="slike/film2.mp4" type="video/mp4"/>
+			</video>
+		</div>
+	</div>
+	<div class="sekcija_on">    
+		<h2 class="onama_naslov">O nama</h2>
+		<p class="onama_odlomak">
+				Cosa Nostra je osnovana 2005. godine kao obiteljski biznis, s ciljem pružanja vrhunskih usluga šišanja, brijanja i stiliziranja brade. 
+				Naša posvećenost kvaliteti i strast prema barber umijeću brzo su privukli klijente iz naše zajednice.
+				Naša priča postala je još značajnija 2017. godine kada smo s ponosom primili nagradu za najbolji Barber Shop u gradu Zagrebu.
+				Ova nagrada prepoznala je našu predanost pružanju usluga najviše kvalitete i izgradnju povjerenja s našim klijentima.
+				S razumijevanjem važnosti digitalne prisutnosti, lansirali smo našu web stranicu 2018. godine kako bismo omogućili lakši pristup našim 
+				uslugama i komunikaciju s našom zajednicom. Također smo aktivno prisutni na društvenim mrežama, gdje dijelimo korisne savjete o brizi za kosu, bradu i stilu.
+				U 2020. godini suočili smo se s izazovima pandemije COVID-19. Iako smo privremeno zatvorili našu fizičku lokaciju,
+				nastavili smo komunicirati s našim vjernim klijentima putem društvenih mreža i pružali im upute za samopomoć.
+				S ponosom smo ponovno otvorili naš Barber Shop 2021. godine, uz stroge zdravstvene mjere, kako bismo osigurali 
+				siguran i ugodan doživljaj za naše klijente. Sada, 2023. godine, otvaramo nove lokacije širom grada, nastavljajući
+				širiti našu prisutnost i pružati vrhunske usluge.
+		</p>
+	</div>
+	<div class="sekcija4">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Naša priča</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="1" id="godine">2005.</td>
+                    <td id="uspjesi"> Otvoren naš prvi Barber Shop u Zagrebu</td>
+                </tr>
+                <tr>
+					<td id="godine">2006.</td>
+					<td  id="uspjesi">Preko 200 zadovoljnih klijenata</td>
+                </tr>
+                <tr>
+                    <td id="godine">2008.</td>
+                    <td id="uspjesi">Prvo proširenje salona</td>
+                </tr>
+				<tr>
+                    <td id="godine">2010.</td>
+                    <td id="uspjesi">Nagrade za najbolje stiliste godine</td>
+                </tr>
+				<tr>
+                    <td id="godine">2014.</td>
+                    <td id="uspjesi">Državna nagrada - Zlatne Škare</td>
+                </tr>
+				<tr>
+                    <td id="godine">2017.</td>
+                    <td id="uspjesi">Najbolji Barber Shop u gradu Zagrebu</td>
+                </tr>
+				<tr>
+                    <td id="godine">2018.</td>
+                    <td id="uspjesi">Objavljena naša web stranica</td>
+                </tr>
+				<tr>
+                    <td id="godine">2020.</td>
+                    <td id="uspjesi">Zatvaranje salona zbog COVID-19</td>
+                </tr>
+				<tr>
+                    <td id="godine">2021.</td>
+                    <td  id="uspjesi">Ponovno otvaranje</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	<h2 class="recenzije_naslov">Recenzije</h2>
+	<div class="sekcija_recenzije">    
+		<div class="recenzije">
+			<div class="slika_klijenta">
+				<img src="slike/profil.png">
+			</div>
+			<div class="o_klijentu">
+			<div class="klijent_ime">Marko Horvat</div>
+			<div class="komentar">Atmosfera u salonu je uvijek ugodna, osoblje ljubazno, a frizure su savršene.</div>
+			</div>
+			<div class="audio">
+				<audio controls>
+					<source src="slike/glas1.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</div>
+		<div class="recenzije">
+			<div class="slika_klijenta">
+				<img src="slike/profil.png">
+			</div>
+			<div class="o_klijentu">
+			<div class="klijent_ime">Ivan Perić</div>
+			<div class="komentar">Prezadovoljan frizurom! Preporučujem svima!</div>
+			</div>
+			<div class="audio">
+				<audio controls>
+					<source src="slike/glas2.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</div>
+		<div class="recenzije">
+			<div class="slika_klijenta">
+				<img src="slike/profil.png">
+			</div>
+			<div class="o_klijentu">
+			<div class="klijent_ime">Luka Radman</div>
+			<div class="komentar">Odlična usluga, najbolji barber shop u gradu.</div>
+			</div>
+			<div class="audio">
+				<audio controls>
+					<source src="slike/glas3.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</div>
+	</div>
+	<div class="video_sekcija">     <!-- VIDEO-->
+		<iframe class="video" src="slike/film3.mp4"></iframe>
+	</div>
+	<footer id="kontakt">           <!-- KONTAKT - FOOTER !-->
+		<div class="sekcija_podnozje">
+			<div class="rv">
+				<h2 class="podnaslov"> Radno vrijeme</h2>
+				<ul>
+					<li>Ponedjeljak - petak</li> 
+					<li>08:00<sup>h</sup> - 20:00<sup>h</sup></li>
+					<li>Subota</li>  
+					<li>09:00<sup>h</sup> - 16:00<sup>h</sup></li>
+					<li><strong>Nedjeljom i blagdanima</strong></li> 
+					<li><strong><em> ne radimo !</em></strong></li>
+				</ul>
+			</div>
+			<div class="kontakt">
+				<h2 class="podnaslov">Kontakt</h2>
+				<ul>
+					<li>Kačićeva ul. 10</li>
+					<li>10000 Zagreb</li>
+					<li>+38500000000</li>
+					<li>cosanostrabb@gmail.com</li>
+				</ul>
+			</div>
+			<div class="social">
+				<h2 class="podnaslov">Mreže</h2>
+				<ul>
+					<li><a href="https://www.youtube.com/" target="_blank"><img src="slike/yt.png" class="ikone"></a></li>
+					<li><a href="https://www.facebook.com/?locale=hr_HR" target="_blank"><img src="slike/fb.png" class="ikone"></a></li>
+					<li><a href="https://www.instagram.com/" target="_blank"><img src="slike/inst.png" class="ikone"></a></li>
+					<li><a href="https://www.tiktok.com/en/" target="_blank"><img src="slike/tt.png" class="ikone"></a></li>
+				</ul>
+			</div>
+			<div class="footer_logo">
+				<img src="slike/logo_full_poz.png" height="300px">
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
